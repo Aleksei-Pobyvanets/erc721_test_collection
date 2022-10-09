@@ -1,0 +1,17 @@
+{
+    "name": "Test NFT",
+    "description": "something",
+    "image":"ipfs.io/ipfs/QmNSXZ7CDGEriuhCXgWRQzZJXoVAXFYKCi4xQNvtXiF7qq/1.png",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "smile1"
+        },
+        {
+            "trait_type": "face",
+            "value": "smile"
+        }
+    ]
+}
+
+
