@@ -14,7 +14,7 @@ contract NFTFriends is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
 
     constructor() ERC721("NFTFriends", "TNT2") {}
 
-    function safeMint(address to, string memory uri) public onlyOwner {
+    function safeMint(address to, string memory uri) public  {
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
@@ -36,7 +36,7 @@ contract NFTFriends is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
         return
             string(
                 abi.encodePacked(
-                    "https://gateway.pinata.cloud/ipfs/QmYnX9KrZjGvKUnKR9eJ1FYdGN5L1LoqZgXsBqb8BSceHJ/",
+                    "https://gateway.pinata.cloud/ipfs/QmasxoKFmhqqjuyHFT4NVjfVvi9CPGf5UBAKwTk8MpgSvJ/",
                     Strings.toString(tokenId),
                     ".json"
                 )
